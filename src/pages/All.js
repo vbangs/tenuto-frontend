@@ -11,21 +11,20 @@ const All = (props) => {
         margin: "10px",
     }
      
-    return props.assignments.map((assignment) => (
-        <div>
+    return (
+        <body>
         <Header />
-        <section class="hero has-background-grey-darker">
-        <div class="hero-body">
-        <h1 class="has-text-white" style={h1}>Week of {assignment.week_of} </h1>
+        <section class="hero is-fullheight has-background-grey-darker">
         <div class="hero-body">
                  <div class="container has-text-centered">
                      <div class="columns is-centered">
                      <div class="column is-5"> 
                              <h1 style={h1} class="title is-2">
+                             {props.assignments.map((assignment) => (
                                 <Assignment
                                     assignment={assignment} 
                                     key={assignment.id} 
-                                />  
+                                />))} 
                              </h1>
                              <br />
                          </div>
@@ -44,11 +43,9 @@ const All = (props) => {
                      </p>
                  </div>
              </div>
-            </div>
         </section>
-     </div>
+     </body>
         )
-    )
 }
 
 export default All

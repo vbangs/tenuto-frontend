@@ -9,7 +9,7 @@ const One = ({ assignments, match, editAssignment, deleteAssignment }) => {
   return (
     <div>
     <Header />
-      <section class="hero is-large has-background-grey-darker">
+      <section class="hero is-fullheight has-background-grey-darker">
           <div class="hero-body">
              <div class="container has-text-centered">
                 <div class="columns is-centered is-9">

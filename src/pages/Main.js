@@ -8,6 +8,7 @@ const Main = () => {
                     <h1 class="title">
                         <span class="is-size-1">
                         <a href="/assignments" class="has-text-white is-large size-1">
+                            
                             tenuto
                         </a>
                         </span>

@@ -21,13 +21,13 @@ const Form = ({ nAssignment, handleSubmit, buttonLabel, history }) => {
   };
 
   return (
-    <div>
+    <body>
     <Header />
     <form style={f1} onSubmit={handleSubmisson}>
     <section class="hero is-large is-dark">
      <div class="hero-body">
          
-             <div class="control has-icons-left has-icons-right">
+
               <input 
                 class="input is-large has-text-white" 
                 placeholder="assignment" 
@@ -36,9 +36,9 @@ const Form = ({ nAssignment, handleSubmit, buttonLabel, history }) => {
                 value={formData.task}
                 name="task"
               />
-             </div>
+
              <br />
-             <div class="has-text-centered">
+             <div class="has-text-centered is-size-3">
              <input
                 type="checkbox"
                 onChange={handleChange}
@@ -70,27 +70,15 @@ const Form = ({ nAssignment, handleSubmit, buttonLabel, history }) => {
                 name="musicianship"
               />&nbsp;Musicianship
              </div>
-             <br />
-             <div class="control has-icons-left has-icons-right">
-               <input
-                class="input is-large"
-                placeholder="date"
-                type="text"
-                onChange={handleChange}
-                value={formData.week_of}
-                name="week_of"
-               />
-               <br></br>
-               <br></br>
                <br></br>
                <input type="submit" value={buttonLabel} />
-             </div>
+
         
      </div>
      
      </section>
     </form>
-    </div>
+    </body>
   );
 };
 

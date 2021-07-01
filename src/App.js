@@ -2,21 +2,18 @@ import All from "./pages/All";
 import One from "./pages/One";
 import Form from "./pages/Form";
 import Main from "./pages/Main";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import 'bulma/css/bulma.min.css';
 
 import React, { useState, useEffect } from "react";
 
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 
 function App(props) {
   
-  const h1 = {
-    textAlign: "center",
-    margin: "10px",
-  }
-
-  const url = "https://tenuto.herokuapp.com/assignments"
+  const url = "https://tenuto.herokuapp.com/assignments/"
 
   const [assignments, setAssignments] = useState([]);
 
@@ -83,13 +80,25 @@ function App(props) {
 
 
     return (
-      <div>
+      <body>
       <Switch>
         <Route
           exact
           path="/"
           render={(routerProps) => (
             <Main />
+          )}
+        />
+        <Route
+          path="/about"
+          render={(routerProps) => (
+            <About />
+          )}
+        />
+         <Route
+          path="/contact"
+          render={(routerProps) => (
+            <Contact />
           )}
         />
         <Route
@@ -135,7 +144,7 @@ function App(props) {
           )}
         />
       </Switch>
-    </div>
+    </body>
   );
 }
 
