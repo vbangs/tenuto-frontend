@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
-const Form = ({ nAssignment, handleSubmit, buttonLabel, history }) => {
+const Form = ({ nAssignment, handleSubmit, history }) => {
 
   const f1 = {
     textAlign: "center",
     margin: "0 32",
   }
 
-  const [formData, setFormData] = useState(nAssignment);
+  const [formData, setFormData] = useState({
+    nAssignment,
+    });
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
-
+ 
   const handleSubmisson = (event) => {
     event.preventDefault();
     handleSubmit(formData);
@@ -23,12 +26,10 @@ const Form = ({ nAssignment, handleSubmit, buttonLabel, history }) => {
   return (
     <body>
     <Header />
-    <form style={f1} onSubmit={handleSubmisson}>
-    <section class="hero is-large is-dark">
-     <div class="hero-body">
-         
-
-              <input 
+      <form style={f1} onSubmit={handleSubmisson}>
+        <section class="hero is-large is-dark">
+          <div class="hero-body">
+             <input 
                 class="input is-large has-text-white" 
                 placeholder="assignment" 
                 type="text"
@@ -36,15 +37,14 @@ const Form = ({ nAssignment, handleSubmit, buttonLabel, history }) => {
                 value={formData.task}
                 name="task"
               />
-
              <br />
              <div class="has-text-centered is-size-3">
              <input
                 type="checkbox"
-                onChange={handleChange}
-                value={formData.new_material}
                 name="new_material"
-              />&nbsp;New Material&emsp;
+                checked={formData.new_material}
+                onChange={handleChange}
+              />{" "}&nbsp;New Material&emsp; 
               <input
                 type="checkbox"
                 onChange={handleChange}
@@ -71,13 +71,11 @@ const Form = ({ nAssignment, handleSubmit, buttonLabel, history }) => {
               />&nbsp;Musicianship
              </div>
                <br></br>
-               <input type="submit" value={buttonLabel} />
-
-        
-     </div>
-     
-     </section>
-    </form>
+             <input type="submit" name="" value="Add Assignment" />
+            </div>
+        </section>
+      </form>
+      <Footer />
     </body>
   );
 };

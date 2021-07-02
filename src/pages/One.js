@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const One = ({ assignments, match, editAssignment, deleteAssignment }) => {
   const id = parseInt(match.params.id);
@@ -30,6 +31,7 @@ const One = ({ assignments, match, editAssignment, deleteAssignment }) => {
           <div class="columns is-mobile is-centered"></div>
           <br></br>
       </section>
+      <Footer />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import Assignment from "../components/assignment";
 import PieChart from "../components/chart";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import { Link } from "react-router-dom";
 
 const All = (props) => {
@@ -44,6 +45,7 @@ const All = (props) => {
                  </div>
              </div>
         </section>
+        <Footer />
      </body>
         )
 }

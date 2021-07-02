@@ -19,11 +19,11 @@ function App(props) {
 
   const nullAssignment = {
     task: "",
-    new_material: "",
-    developing_material: "",
-    performance_material: "",
-    technique: "",
-    musicianship: "",
+    new_material: "false",
+    developing_material: "false",
+    performance_material: "false",
+    technique: "false",
+    musicianship: "false",
     week_of: ""
   }
 

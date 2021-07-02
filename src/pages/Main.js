@@ -1,8 +1,10 @@
 import React from "react";
+import Footer from "../components/footer";
 
 const Main = () => {
     return (
-        <section class="hero is-fullheight has-background-grey-dark">
+      <body>
+       <section class="hero is-fullheight has-background-grey-dark">
         <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title">
@@ -15,7 +17,9 @@ const Main = () => {
                     </h1>
                 </div>
             </div>
-        </section>
+       </section>
+       <Footer />
+      </body>
     )}
 
 export default Main
