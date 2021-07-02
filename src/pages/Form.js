@@ -2,16 +2,14 @@ import React, { useState } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-const Form = ({ nAssignment, handleSubmit, history }) => {
+const Form = ({ nAssignment, handleSubmit, buttonLabel, history }) => {
 
-  const f1 = {
+  const formAlign = {
     textAlign: "center",
-    margin: "0 32",
+    margin: "auto"
   }
 
-  const [formData, setFormData] = useState({
-    nAssignment,
-    });
+  const [formData, setFormData] = useState(nAssignment);
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -26,13 +24,13 @@ const Form = ({ nAssignment, handleSubmit, history }) => {
   return (
     <body>
     <Header />
-      <form style={f1} onSubmit={handleSubmisson}>
-        <section class="hero is-large is-dark">
-          <div class="hero-body">
-             <input 
-                class="input is-large has-text-white" 
-                placeholder="assignment" 
+      <section class="hero is-fullheight has-background-dark">
+        <div class="hero-body">
+          <form style={formAlign} class="has-text-white" onSubmit={handleSubmisson}>
+             <input  
+                placeholder="Assignment" 
                 type="text"
+                class="has-text-white"
                 onChange={handleChange}
                 value={formData.task}
                 name="task"
@@ -42,39 +40,39 @@ const Form = ({ nAssignment, handleSubmit, history }) => {
              <input
                 type="checkbox"
                 name="new_material"
-                checked={formData.new_material}
+                isChecked={formData.new_material}
                 onChange={handleChange}
-              />{" "}&nbsp;New Material&emsp; 
+              />&nbsp;New Material&emsp; 
               <input
                 type="checkbox"
                 onChange={handleChange}
-                value={formData.developing_material}
+                isChecked={formData.developing_material}
                 name="developing_material"
               />&nbsp;Developing Material&emsp;
               <input
                 type="checkbox"
                 onChange={handleChange}
-                value={formData.performance_material}
+                isChecked={formData.performance_material}
                 name="performance_material"
               />&nbsp;Performance Material&emsp;
               <input
                 type="checkbox"
                 onChange={handleChange}
-                value={formData.technique}
+                isChecked={formData.technique}
                 name="technique"
               />&nbsp;Technique&emsp;
               <input
                 type="checkbox"
                 onChange={handleChange}
-                value={formData.musicianship}
+                isChecked={formData.musicianship}
                 name="musicianship"
               />&nbsp;Musicianship
              </div>
-               <br></br>
-             <input type="submit" name="" value="Add Assignment" />
-            </div>
+             <br></br>
+                <input class="button is-medium has-text-white is-success is-outlined" type="submit" value={buttonLabel} />
+            </form>
+          </div>
         </section>
-      </form>
       <Footer />
     </body>
   );

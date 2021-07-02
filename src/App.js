@@ -43,7 +43,6 @@ function App(props) {
       },
       body: JSON.stringify(newAssignment)
     })
-
     getAssignments()
   }
 
@@ -60,7 +59,6 @@ function App(props) {
       },
       body: JSON.stringify(assignment),
     })
-
     getAssignments()
   }
 
@@ -68,7 +66,6 @@ function App(props) {
     const response = await fetch(url + assignment.id + "/", {
       method: "delete",
     })
-
     getAssignments()
     props.history.push("/assignments")
   }
@@ -128,7 +125,7 @@ function App(props) {
               {...routerProps}
               nAssignment={nullAssignment}
               handleSubmit={addAssignments}
-              buttonLabel="New Assignment"
+              buttonLabel="Add Assignment"
             />
           )}
         />

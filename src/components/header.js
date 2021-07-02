@@ -5,7 +5,7 @@ const Header = () => {
         <nav class="navbar has-background-grey-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <img src="https://i.imgur.com/VssO41n.jpg" alt="" width="40" height="28"/>
+            <img src="https://i.imgur.com/tVdQqon.png" alt="" width="45" height="28"/>
           </a>
       
           <a role="button" class="navbar-burger is-white" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

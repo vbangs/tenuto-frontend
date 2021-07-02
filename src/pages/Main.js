@@ -2,6 +2,11 @@ import React from "react";
 import Footer from "../components/footer";
 
 const Main = () => {
+    
+    const title = {
+        fontSize: "400%"
+    }
+
     return (
       <body>
        <section class="hero is-fullheight has-background-grey-dark">
@@ -10,8 +15,7 @@ const Main = () => {
                     <h1 class="title">
                         <span class="is-size-1">
                         <a href="/assignments" class="has-text-white is-large size-1">
-                            
-                            tenuto
+                            <h1 style={title}><i>tenuto</i></h1>
                         </a>
                         </span>
                     </h1>
