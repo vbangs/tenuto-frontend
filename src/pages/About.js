@@ -26,24 +26,23 @@ const About = () => {
                 <div class="container has-text-left">
                 <h1 style={abouth1} class="has-text-white">About</h1>
                         <p style={aboutStyle} class="has-text-white is-size-3">
-                            <i>tenuto</i> allows musicians to organize their practice sessions according to the
-                            Gerald Klickstein's Five Practice Zones.  
+                            <i>Tenuto</i> allows musicians to organize their practice sessions according to 
+                            Gerald Klickstein's Five Practice Zones, which include:  
                             < br />< br />
-                            <b>New Material</b> encompasses any unattempted pieces of music and is intended
-                            to be played at slow or moderate tempos.  
+                            <b>New Material</b> - any unattempted pieces of music, all of which are intended
+                            to be played at slow or moderate tempos (30% of a session)
                             < br />< br />
-                            A piece of music becomes <b>Developing Material</b> when the musician can 
-                            easily play or sing the piece nearer to the intended tempo of the music.  As the musician develops
-                            a piece of music, practice might entail exploring different manners of interpretation, increasing the tempo of the music and 
-                            commiting the music to memory.
+                            <b>Developing Material</b> - any pieces that can be 
+                            easily played or sung closer to their intended tempos of the music; practice might entail exploring different manners of interpretation, increasing the tempo of the piece and 
+                            commiting the music to memory (20% of a session)
                             < br />< br />
-                            When the musician feels comfortable playing a piece of music at its intended tempo and believes 
-                            the piece to be artistically complete, the piece becomes <b>Performance Material</b>. 
+                            <b>Performance Material</b> - any pieces that are felt to be artistically complete (15% of a session)
                             < br />< br />
-                            Lastly, <b>Technique</b> includes any scales, arpeggios, etudes  
-                            or other exercises aimed at strengthening the musician's physical playing or singing acumen.  <b>Musicianship</b> entails 
-                            any sight-reading, improvisation or other educational activities that may enrich the musician's 
-                            practice.
+                            <b>Technique</b> - scales, arpeggios, etudes  
+                            or other exercises aimed at strengthening the physical playing or singing acumen (15-20% of a session)  
+                            <br /><br />
+                            <b>Musicianship</b> - any sight-reading, improvisation or other educational activities that may enrich the scope of 
+                            musical practice (15-20% of a session)
                         </p>
                         <br />
                 <a style={button} class="button is-medium is-info is-outlined">
