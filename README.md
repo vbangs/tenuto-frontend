@@ -32,7 +32,6 @@ JavaScript </br>
 React </br>
 Chart.js </br>
 emailJS </br>
-Netlify </br>
 
 
 </br>
@@ -64,4 +63,4 @@ Netlify </br>
 <br></br>
 
 
-**Link to Live Site:** 
+**Link to Live Site:** TBD
