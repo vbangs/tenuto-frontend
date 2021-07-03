@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import "milligram";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import '../node_modules/bulma/css/bulma.min.css';
 
 ReactDOM.render(
   <Router>

@@ -1,7 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import '../App.css';
-import { Redirect } from "react-router-dom";
 
 const ContactForm = () => {
 
