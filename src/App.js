@@ -4,7 +4,6 @@ import Form from "./pages/Form";
 import Main from "./pages/Main";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import '/bulma/css/bulma.min.css';
 
 import React, { useState, useEffect } from "react";
 
