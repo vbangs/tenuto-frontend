@@ -33,8 +33,8 @@ const About = () => {
                             to be played at slow or moderate tempos (30% of a session)
                             < br />< br />
                             <b>Developing Material</b> - any pieces that can be 
-                            easily played or sung closer to their intended tempos of the music; practice might entail exploring different manners of interpretation, increasing the tempo of the piece and 
-                            commiting the music to memory (20% of a session)
+                            easily played or sung closer to their intended tempos; practice might entail exploring different manners of interpretation, increasing the tempo of a piece and 
+                            commiting music to memory (20% of a session)
                             < br />< br />
                             <b>Performance Material</b> - any pieces that are felt to be artistically complete (15% of a session)
                             < br />< br />
